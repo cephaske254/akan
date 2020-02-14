@@ -1,0 +1,57 @@
+.landing-page{
+    background: url("../images/ghana.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landing-page .container {
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 10px;
+    max-width: 800px;
+    font-weight: 500;
+    color: #000;
+}
+.landing-page button {
+    width: auto;
+    background: rgba(0, 0, 0, 0.473);
+    font-size: xx-large;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 40px;
+    margin: 10px;
+} 
+.landing-page button:hover {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.849);
+}
+.navbar {
+    background: rgba(44, 44, 44, 0.655);
+}
+.nav-item{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 6px;
+    font-weight: 900;
+}
+.nav-item:hover {
+    color: #fff;
+}
+.akanInfo {
+    background: rgba(0, 0, 0, 0.849);
+    position: absolute;
+    top: 0;left:0;
+    width: 100%;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+.akai-form {
+    min-width: 500px;
+    justify-content: center;
+    margin: 10px;
+}

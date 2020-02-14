@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js"></script>
+    <title>Document</title> 
+</head>
+<body>
+
+
+   <div class="landing-page container-fluid border-bottom min-vh-100 justify-content-center">
+       <div class="navbar fixed-top justify-content-center border-bottom">
+         <a href="#" class="nav-item btn btn-white border p-2">Scroll top</a>
+         <a href="#akaiformh1" class="nav-item btn btn-white border p-2">Get Name</a>
+       </div>
+     <div class="border container">
+        <h1>Info</h1>
+        <h2>Briefly</h2>
+     <p>
+      The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.
+
+      This naming tradition is shared throughout West Africa and the African diaspora. During the 18th–19th centuries, slaves in the Caribbean from the region that is modern-day Ghana were referred to as Coromantees. Many of the leaders of slave rebellions had "day names" including Cuffy or Kofi, Cudjoe or Kojo, and Quamina or Kwame/Kwamina. 
+     </p>
+     <h2>How It Works</h2>
+     <ol>
+       <li>Click on "Get Akai Name" below or "GET NAME" from the Navigation Bar</li>
+       <li>Fill all the required fields in the data capture form
+         <p>The</p>
+       </li>
+
+     </ol>
+     </div>
+      <button type="" onclick="window.location.href='#akaiformh1'" class="btn border">Get Akai Name</button>
+   </div>
+
+
+
+   <div class="container min-vh-100">
+       <div class="row justify-content-center">
+        <form class="akai-form form-horizontal border p-4" onsubmit="return false">
+            </label>
+            <h2 class="display-4 py-1 text-truncate" id="akaiformh1">Form</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="date">Date Of Birth</label>
+              <input type="date"class="form-control" id="date">
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="gender" id="gender" value="M">Male</label>
+              <label><input type="radio" id="gender" name="gender" value="F">Female</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-success m-2 form-control" onclick="getAkanName()">
+                <input type="reset" value="Reset" class="btn btn-danger m-2 form-control">
+            </div>
+
+            <div class="akanInfo">
+                <span id="disp"></span>
+            </div>
+            
+          </form> 
+       </div>
+   </div> 
+</body>
+</html>
