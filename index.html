@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/style.css">
     <script src="static/js/script.js"></script>
-    <title>Document</title> 
+    <title>Akan | Week Two Project</title> 
 </head>
-<body>
+<body onload="startTime()">
 
 
    <div class="landing-page container-fluid border-bottom min-vh-100 justify-content-center">
@@ -27,13 +27,12 @@
      <h2>How It Works</h2>
      <ol>
        <li>Click on "Get Akai Name" below or "GET NAME" from the Navigation Bar</li>
-       <li>Fill all the required fields in the data capture form
-         <p>The</p>
-       </li>
+       <li>Fill all the required fields in the data capture form</li>
+       <li>Press the "Submit" button and wait for your akai Name to be processed</li>
 
      </ol>
      </div>
-      <button type="" onclick="window.location.href='#akaiformh1'" class="btn border">Get Akai Name</button>
+      <button type="" onclick="window.location.href='#akaiformh1'" class="btn border">Get Akan Name</button>
    </div>
 
 
@@ -41,19 +40,25 @@
    <div class="container min-vh-100">
        <div class="row justify-content-center">
         <form class="akai-form form-horizontal border p-4" onsubmit="return false">
-            </label>
-            <h2 class="display-4 py-1 text-truncate" id="akaiformh1">Form</h2>
+
+          <h2 class="display-4 py-1 text-truncate" id="akaiformh1">Form</h2>
+            <div class="screen p-1">
+              <div class="topBar"><pre>akan name display&#9;En&#9;on&#9;</pre><span id="time"></span></div>
+              <div class="akaiName" id="screenName">Name: </div>
+              <div class="day" id="screenDay">Day:</div>
+          </div>
+          
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+              <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
             </div>
             <div class="form-group">
               <label for="date">Date Of Birth</label>
-              <input type="date"class="form-control" id="date">
+              <input type="date"class="form-control" id="date" required>
             </div>
             <div class="radio">
-              <label><input type="radio" name="gender" id="gender" value="M">Male</label>
-              <label><input type="radio" id="gender" name="gender" value="F">Female</label>
+              <label><input type="radio" name="gender" id="gender" value="M" required>Male</label>
+              <label><input type="radio" id="gender" name="gender" value="F" required>Female</label>
             </div>
             <div class="form-group">
                 <input type="submit" value="Submit" class="btn btn-success m-2 form-control" onclick="getAkanName()">

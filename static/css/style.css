@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');/*font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/*font-family: 'Press Start 2P', cursive;*/
+body {
+    cursor: default;
+}
 .landing-page{
     background: url("../images/ghana.jpg");
     display: flex;
@@ -9,7 +15,13 @@
     border-radius: 10px;
     max-width: 800px;
     font-weight: 500;
+    transition: all .2s;
     color: #000;
+}
+.landing-page .container:hover {
+    box-shadow: 2px 2px 2px rgb(248, 0, 54);
+    background: rgba(255, 255, 255, 0.9);
+
 }
 .landing-page button {
     width: auto;
@@ -18,7 +30,14 @@
     color: #fff;
     font-weight: 800;
     border-radius: 40px;
-    margin: 10px;
+    margin: 15px;
+    /*Initializing Bounce animation for the akan name button*/
+    -webkit-animation-duration: .8s;
+    animation-duration: 2s;
+    -webkit-animation-duration: .8s;
+    animation-name: bounce;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 } 
 .landing-page button:hover {
     background: #fff;
@@ -36,22 +55,58 @@
 .nav-item:hover {
     color: #fff;
 }
-.akanInfo {
-    background: rgba(0, 0, 0, 0.849);
-    position: absolute;
-    top: 0;left:0;
-    width: 100%;
-    display: flex;flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: xx-large;
-    font-weight: 900;
-}
-
 
 .akai-form {
     min-width: 500px;
     justify-content: center;
     margin: 10px;
+}
+.screen *{
+    font-family: 'Orbitron', sans-serif;
+}
+.screen  pre {
+    margin: 0%;
+}
+.screen .topBar {
+    font-size: 12px;
+    text-align: center;
+}
+.screen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #ceda92;
+    border-radius: 6px;
+    align-self: center;
+    border: 4px outset #000;
+    transition: all .2s;
+ 
+}
+.screen:hover {
+    background: #dce99c;
+}
+.screen .day {
+    font-size: small;
+}
+#time {
+    margin: 0;
+}
+/*================== Bounce effect for "Get Akan Name Button" ====================*/
+@keyframes bounce {
+  0%, 100%{
+      transform:translateY(-10px);
+  }
+  50%{
+    transform:translateY(0);
+  } 
+}
+@-webkit-keyframes bounce {
+    0%, 100%{
+        transform:translateY(-10px);
+    }
+    50%{
+      transform:translateY(0);
+    }   
 }
